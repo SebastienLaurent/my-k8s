@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apache-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: apache
+  template:
+    metadata:
+      labels:
+        app: apache
+    spec:
+      containers:
+      - name: "apacheserver-1868502895"
+        image: fchapuzot/customhttpd:2.4
+        imagePullPolicy: Always
+        env:
+        - name: SERVER_MESSAGE
+          value: BaseMessage
+        ports:
+        -  name: server-endpoint
+           containerPort: 8000
