@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apache-deployment
+  name: deployment
 spec:
   replicas: 1
   selector:
@@ -13,7 +13,7 @@ spec:
         app: apache
     spec:
       containers:
-      - name: "apacheserver-1868502895"
+      - name: "apacheserver"
         image: fchapuzot/customhttpd:2.4
         imagePullPolicy: Always
         env:

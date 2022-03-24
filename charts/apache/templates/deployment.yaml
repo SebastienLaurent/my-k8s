@@ -13,7 +13,7 @@ spec:
         app: {{ .Release.Name }}
     spec:
       containers:
-      - name: "apacheserver-1868502895"
+      - name: "apacheserver"
         image: fchapuzot/customhttpd:2.4
         imagePullPolicy: Always
         env:
