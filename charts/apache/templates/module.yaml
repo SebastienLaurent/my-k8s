@@ -1,0 +1,13 @@
+apiVersion: sap.kosmos.net/v1
+kind: KosmosModule
+metadata:
+  name: module-example
+spec:
+  cu: test
+  interfaces:
+  - id: postgres1-cm
+    name: pg1
+    type: postgres
+  - id: postgres2-cm
+    name: pg2
+    type: postgres
