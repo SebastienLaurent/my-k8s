@@ -1,2 +1,3 @@
-server:
-  message: Instance1
+apache:
+  server:
+    message: Instance1
