@@ -18,7 +18,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: SERVER_MESSAGE
-          value: {{ .Values.server.message | quote }}
+          value: A{{ .Values.server.message | quote }}
         ports:
         -  name: server-endpoint
            containerPort: 8000
