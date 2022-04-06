@@ -5,9 +5,9 @@ metadata:
 spec:
   cu: test
   interfaces:
-  - id: postgres1-cm
+  - id: postgres1
     name: pg1
     type: postgres
-  - id: postgres2-cm
+  - id: postgres2
     name: pg2
     type: postgres
